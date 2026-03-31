@@ -7,6 +7,8 @@ print(list_tasks())
 from app.weather import get_weather
 
 print(get_weather("Berlin"))
-from app.weather import get_weather
+def run():
+    print("Application running")
 
-print(get_weather("Berlin"))
+if __name__ == "__main__":
+    run()
