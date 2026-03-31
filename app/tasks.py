@@ -12,3 +12,8 @@ def format_tasks():
         f"{t['task']} - {'done' if t['done'] else 'pending'}"
         for t in tasks
     ]
+from app.tasks import add_task, list_tasks
+
+def test_add_task():
+    add_task("Test")
+    assert len(list_tasks()) > 0
