@@ -7,3 +7,6 @@ print(list_tasks())
 from app.weather import get_weather
 
 print(get_weather("Berlin"))
+from app.weather import get_weather
+
+print(get_weather("Berlin"))
