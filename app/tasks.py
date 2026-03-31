@@ -7,3 +7,8 @@ def list_tasks():
 def complete_task(index):
     if 0 <= index < len(tasks):
         tasks[index]["done"] = True
+def format_tasks():
+    return [
+        f"{t['task']} - {'done' if t['done'] else 'pending'}"
+        for t in tasks
+    ]
